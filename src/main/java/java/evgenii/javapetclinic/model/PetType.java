@@ -1,5 +1,6 @@
 package java.evgenii.javapetclinic.model;
 
+
 public class PetType {
 
     private String name;
