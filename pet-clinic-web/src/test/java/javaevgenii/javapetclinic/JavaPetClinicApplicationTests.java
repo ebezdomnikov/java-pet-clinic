@@ -1,4 +1,4 @@
-package java.evgenii.javapetclinic;
+package javaevgenii.javapetclinic;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

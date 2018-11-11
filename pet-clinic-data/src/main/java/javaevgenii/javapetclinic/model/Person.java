@@ -1,4 +1,4 @@
-package java.evgenii.javapetclinic.model;
+package javaevgenii.javapetclinic.model;
 
 public class Person {
 
