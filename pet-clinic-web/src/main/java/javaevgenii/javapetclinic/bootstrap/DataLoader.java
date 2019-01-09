@@ -12,12 +12,12 @@ import org.springframework.boot.CommandLineRunner;
 @Component
 public class DataLoader implements CommandLineRunner {
 
-    private final OwnerService ownerSerice;
+    private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerSerice = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
@@ -28,7 +28,7 @@ public class DataLoader implements CommandLineRunner {
         owner.setId(0L);
         System.out.println("Loaded owners...");
 
-        ownerSerice.save(owner);
+        ownerService.save(owner);
         Vet vet = new Vet();
         vet.setFirstName("Name");
         vet.setLastName("Name");
